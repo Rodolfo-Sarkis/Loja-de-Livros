@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Loja de Livros</title>
+    <meta name="description"
+        content="Clone funcional da página 'Vender livros online' — layout, seções e comportamento. Imagens e logos são placeholders." />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="#">
+                <!-- Placeholder brand (substituir por sua imagem se quiser) -->
+                <img src="https://images.unsplash.com/photo-1496104679561-38b7c2d0b2b6?w=200&q=80&auto=format&fit=crop"
+                    alt="logo-placeholder" />
+                <span>Loja de Livros</span>
+            </a>
+
+            <nav class="main-nav" id="mainNav">
+                <a href="#passos">Passos</a>
+                <a href="#comissoes">Comissões</a>
+                <a href="#beneficios">Benefícios</a>
+                <a href="#como-funciona">Como funciona</a>
+                <a class="btn-cta" href="#comece">Comece a vender</a>
+            </nav>
+
+
+            <button id="menuToggle" class="menu-toggle" aria-label="Abrir menu">
+                ☰
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <h1>Loja de Livros</h1>
+                    <p>Cadastre seus títulos, alcance milhões de clientes e conte com opções de logística que facilitam
+                        a venda.</p>
+                    <div class="hero-actions">
+                        <a id="comece" class="btn primary" href="#">Comece a vender</a>
+                        <a class="btn outline" href="#passos">Saiba como</a>
+                    </div>
+
+                    <ul class="benefit-list">
+                        <li>Fácil cadastro</li>
+                        <li>Opções de logística (FBA)</li>
+                        <li>Pagamento quinzenal</li>
+                    </ul>
+                </div>
+
+                <div class="hero-img">
+                    <!-- imagem substituta -->
+                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=900&q=80&auto=format&fit=crop"
+                        alt="pilha de livros" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Steps -->
+        <section id="passos" class="steps container">
+            <h2>Passo a passo para vender livros</h2>
+            <div class="steps-grid">
+                <article class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Registre-se</h3>
+                    <p>Crie sua conta de vendedor com CPF/CNPJ, dados bancários e telefone.</p>
+                </article>
+
+                <article class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Cadastre seus produtos</h3>
+                    <p>Liste seus livros: título, autor, ISBN, imagem e preço.</p>
+                </article>
+
+                <article class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Envie para clientes</h3>
+                    <p>Envie por conta própria ou use FBA para logística totalmente integrada.</p>
+                </article>
+
+                <article class="step-card">
+                    <div class="step-number">4</div>
+                    <h3>Receba pagamentos</h3>
+                    <p>Pagamentos são depositados periodicamente em sua conta bancária.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Commission / Pricing -->
+        <section id="comissoes" class="pricing container">
+            <div class="pricing-inner">
+                <div class="pricing-card">
+                    <h3>Comissão para livros</h3>
+                    <p>Comissão padrão: <strong>15%</strong> (mínimo R$ 1,00)</p>
+                    <ul>
+                        <li>Exemplo: Produto R$50 — Comissão R$7,50</li>
+                        <li>Exemplo: Produto R$100 — Comissão R$15,00</li>
+                    </ul>
+                    <a class="btn" href="#beneficios">Saiba mais</a>
+                </div>
+
+                <div id="beneficios" class="rewards-card">
+                    <h3>Benefícios de cadastro</h3>
+
+                    <ul>
+                        <li>Sem mensalidade por 1 ano (promoção fictícia)</li>
+                        <li>Créditos de anúncio (exemplo)</li>
+                        <li>Suporte e materiais de seller university</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ / Details -->
+        <section id="como-funciona" class="faq container">
+            <h2>Como funciona</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>Que informações precisarei?</h4>
+                    <p>Nome, CPF ou CNPJ, telefone, comprovante de residência, conta bancária e cartão.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>Qual o tamanho recomendado das imagens?</h4>
+                    <p>Recomendamos 1.000 x 1.000 px e fundo branco, produto ocupando ~80% da área.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4>O que é FBA?</h4>
+                    <p>Serviço de logística da plataforma que armazena, embala e envia seus produtos.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA wide -->
+        <section class="cta-wide">
+            <div class="container cta-inner">
+                <h3>Pronto para começar?</h3>
+                <p>Abra sua loja e coloque seus livros à venda no marketplace.</p>
+                <a class="btn primary" href="#">Criar conta de vendedor</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-grid">
+            <div>
+                <h4>Amazon (clone)</h4>
+                <p>Este é um clone de demonstração com conteúdo substituto.</p>
+            </div>
+
+            <div>
+                <h4>Links úteis</h4>
+                <ul>
+                    <li><a href="#passos">Passos</a></li>
+                    <li><a href="#comissoes">Comissões</a></li>
+                    <li><a href="#como-funciona">Como funciona</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Contato</h4>
+                <p>Exemplo: vendedor@exemplo.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <small>© 2025 Loja de Livros — Todos os Direitos Reservados.
+            </small>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
