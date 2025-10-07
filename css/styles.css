@@ -13,6 +13,7 @@ html, body {
   color: #1f2937; 
   background: #fff; 
   font-size: 18px;
+  scroll-behavior: smooth;
 }
 
 /* Container */
@@ -67,6 +68,26 @@ html, body {
 .brand span { 
   font-weight: 600; 
   letter-spacing: 0.2px; 
+}
+
+section {
+  scroll-margin-top: 160px; /* mesma altura do header */
+}
+
+.pricing-inner {
+  display: flex;
+  gap: 1rem;
+  align-items: stretch;
+  flex-wrap: nowrap; /* garante que não quebre em telas pequenas */
+}
+
+
+#beneficios {
+  scroll-margin-top: 160px; /* evita sobreposição do header */
+}
+
+#comissoes {
+  scroll-margin-top: 160px; /* evita sobreposição do header */
 }
 
 .titulo {

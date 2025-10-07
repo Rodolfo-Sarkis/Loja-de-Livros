@@ -19,3 +19,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 });
+
+// Scroll suave para comissões e benefícios
+document.querySelectorAll('.main-nav a[href="#comissoes"], .main-nav a[href="#beneficios"]').forEach(link => {
+  link.addEventListener('click', e => {
+    e.preventDefault();
+    document.querySelector('#comissoes-beneficios').scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+});
