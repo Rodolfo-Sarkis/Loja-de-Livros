@@ -388,5 +388,30 @@ main {
   }
 }
 
+/* --- Correção: manter as três linhas do menu hambúrguer visíveis --- */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  z-index: 3000; /* garante que fique acima do menu aberto */
+}
+
+/* Em telas pequenas */
+@media (max-width: 980px) {
+  .menu-toggle {
+    display: block;
+    position: relative; /* mantém no fluxo visível */
+  }
+
+  /* Quando o menu estiver ativo, o ícone não some */
+  .menu-toggle.active {
+    color: #333; /* mantém a cor normal */
+    opacity: 1; /* garante visibilidade */
+    transform: none; /* impede animações que escondam */
+  }
+}
 
 
