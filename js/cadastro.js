@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // Fecha o menu ao clicar fora dele
   document.addEventListener('click', (e) => {
-    // Só fecha se o menu estiver aberto e o clique for fora do menu e do botão
     if (
       mainNav.classList.contains('active') &&
       !mainNav.contains(e.target) &&
@@ -104,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (senha !== confirmar) return mostrarMensagem("As senhas não coincidem.", "erro");
 
     mostrarMensagem("Cadastro realizado com sucesso!", "sucesso");
-    alert("Conta criada com sucesso!");
+    mostrarToast("Conta criada com sucesso!");
     form.reset();
   });
 
@@ -112,4 +111,18 @@ document.addEventListener("DOMContentLoaded", () => {
     msg.textContent = texto;
     msg.className = `mensagem ${tipo}`;
   }
+
+  // --- Notificação estilizada (toast) ---
+  function mostrarToast(mensagem) {
+    const toast = document.createElement("div");
+    toast.className = "toast";
+    toast.textContent = mensagem;
+    document.body.appendChild(toast);
+
+    // Remove após animação
+    setTimeout(() => {
+      toast.remove();
+    }, 3500);
+  }
 });
+
